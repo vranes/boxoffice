@@ -9,7 +9,7 @@ const app = express();
 app.use("/api/movies", movies);
 app.use("/api/reviews", reviews);
 
-// sredjujemo one page app
+// one page app
 const staticMiddleware = express.static(path.join(__dirname, 'dist'));
 
 app.use(staticMiddleware);
